@@ -26,12 +26,23 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 25px 60px;
+    padding:1px 10px;
     margin-bottom: 30px;
     align-items: center;
-    padding: 60px;
+    
     text-align: center;
     background: #1abc9c;
+    color: white;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 60px;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    background: #002642;
     color: white;
 }
 .footer{
@@ -91,7 +102,7 @@ a{
     display: flex;
     gap:8px;
     position: relative;
-    top:40px;
+    top:-20px;
     
 }
 .About, .contact{
@@ -365,8 +376,8 @@ input[type=text], select, textarea {
 
 /**---------About------------**/
 .About1{
-    margin:5vmax 20vmax 10vmax 20vmax;
-    font-size:1.5vmax;
+    margin:5vmax 10vmax 5vmax 10vmax;
+    font-size:20px;
     color:aliceblue;
 }
 .ceo{
