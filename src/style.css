@@ -1,0 +1,377 @@
+/**
+RITIK PATIDAR
+**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #fefae0;
+}
+
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #840032;
+    justify-content: space-between;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.rightfoot{
+    gap: 8px;
+    right:-80%;
+    top:-0.2px;
+    
+}
+
+.sunlight{
+    
+    font-size: 50px;
+    font-weight: bold;
+
+    background: linear-gradient(-45deg,#9d0208, #ffba08 );
+    background-size:300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: move 5s ease-in-out infinite;
+}
+@keyframes move {
+    0% { background-position: 0 50%;}
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0 50%;}
+}
+
+
+.sunlight{
+    font-size: 50px;
+    font-weight: bold;
+    color:#333;
+}
+.cart, .like, .home, .person{
+    
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    background-color: #002642;
+    color: #f8edeb;
+    padding: 7.5px;
+    font-size: 15px;
+    border-radius: 50%;
+    top:30px;
+}
+.rightnav{
+    display: flex;
+    gap:8px;
+    position: relative;
+    top:40px;
+    
+}
+.About, .contact{
+    position: relative;
+    top:31.5px;
+    background-color:#ccc;
+    border-radius: 4px;
+    padding : 5px;
+    
+}
+
+
+.cartAmount{
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    font-size: 10px;
+    
+    background-color: #840032;
+    color: #e5dada;
+    padding :3px;
+    border-radius: 50%;
+}
+
+/**
+* ! Shop items styles 
+**/
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width:500px){
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+
+
+.item{
+    border:2px solid #002642;
+    border-radius: 400px 400px 0 0;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 400px 400px 0 0;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:10px ;
+}
+
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    font-style: 16px;
+
+}
+
+.bi-dash-lg{
+    color:#840032;
+}
+.bi-plus-lg{
+    color:#002642;
+}
+
+/**
+* ! style rules for label and some buttons
+**/
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn, .checkout, .removeAll{
+    background-color: #840032;
+    color: #e5dada;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.checkout{
+    background-color : #002642;
+    font-weight: bold;
+}
+.removeAll{
+    background-color : #840032;
+    font-weight: bold;
+}
+
+.bi-x-lg{
+    color: #840032;
+    font-weight: bold;
+}
+
+/**
+* ! style rules for shopping cart
+**/
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+    gap:15px;
+
+    
+}
+
+/**
+* ! style rules for cart item
+**/
+.cart-item {
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x{
+    width: 195px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.cart-item-price{
+    background-color: #002642;
+    color:#e5dada;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
+/**
+------------------------------------------
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #fefae0;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /**------Search button------------------**/
+  * {
+    box-sizing: border-box;
+    }
+
+    /* Style the search field */
+    .example{
+        position: relative;
+        top:27px;
+    }
+    form.example input[type=text] {
+    padding: 2px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    border-radius: 4px 0 0 4px;
+
+    background: #f1f1f1;
+    
+    
+    }
+
+    /* Style the submit button */
+    form.example button {
+    float: left;
+    width: 20%;
+    padding: 2.4px;
+    background: #219ebc;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-radius: 0 4px 4px 0;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    position: relative;
+    top:5.6px;
+    
+    }
+
+    form.example button:hover {
+    background: #0b7dda;
+    }
+
+    /* Clear floats */
+    form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+/**---------About------------**/
+.About1{
+    margin:5vmax 20vmax 10vmax 20vmax;
+    font-size:1.5vmax;
+    color:aliceblue;
+}
+.ceo{
+    border-radius: 50%;
+    position: relative;
+    right: -60%;
+    top:-45px;
+}
